@@ -1,0 +1,63 @@
+
+dependencies {
+    // Coroutines (For background tasks & async programming)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3") // Core library for coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3") // Android-specific coroutine support
+
+    // Gson (For JSON parsing)
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    // Retrofit (For API calls)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") // Retrofit core library
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") // Gson converter for Retrofit
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0") // Logging interceptor for debugging API calls
+
+    // Glide (For image loading)
+    implementation("com.github.bumptech.glide:glide:4.15.1") 
+    kapt("com.github.bumptech.glide:compiler:4.15.1") // Required for Glide annotations
+
+    // Picasso (Alternative for image loading)
+    implementation("com.squareup.picasso:picasso:2.8")
+
+    // Room Database (For local storage)
+    implementation("androidx.room:room-runtime:2.6.1") 
+    kapt("androidx.room:room-compiler:2.6.1") // Required for Room annotations
+    implementation("androidx.room:room-ktx:2.6.1") // Kotlin extensions for Room
+
+    // Firebase (For backend services)
+    implementation(platform("com.google.firebase:firebase-bom:32.7.1")) // Firebase BOM (manages all Firebase versions)
+    implementation("com.google.firebase:firebase-auth") // Firebase Authentication
+    implementation("com.google.firebase:firebase-firestore") // Cloud Firestore for database
+    implementation("com.google.firebase:firebase-storage") // Firebase Cloud Storage
+    implementation("com.google.firebase:firebase-messaging") // Firebase Cloud Messaging (FCM) for push notifications
+
+    // Jetpack Compose (For modern UI)
+    implementation("androidx.compose.ui:ui:1.6.1")
+    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0") // Lifecycle support for Compose
+
+    // Lifecycle Components (For MVVM architecture)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0") // ViewModel support
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0") // LiveData support
+
+    // Navigation Component (For managing navigation)
+    implementation("androidx.navigation:navigation-compose:2.7.7") // Jetpack Compose Navigation
+
+    // Paging Library (For handling large datasets)
+    implementation("androidx.paging:paging-runtime-ktx:3.2.1") 
+    implementation("androidx.paging:paging-compose:3.3.0-alpha03") // Compose integration
+
+    // Dependency Injection (Dagger-Hilt)
+    implementation("com.google.dagger:hilt-android:2.51")
+    kapt("com.google.dagger:hilt-compiler:2.51")
+
+    // WorkManager (For background tasks)
+    implementation("androidx.work:work-runtime-ktx:2.9.0") 
+
+    // Google Maps (For integrating maps)
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.maps.android:maps-compose:2.11.4") // Maps in Jetpack Compose
+
+    // Lottie (For animations)
+    implementation("com.airbnb.android:lottie-compose:6.2.0")
+}
